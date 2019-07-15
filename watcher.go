@@ -43,7 +43,6 @@ const (
 	Rename
 	Chmod
 	Move
-	Close
 	CloseNoWrite
 	CloseWrite
 )
@@ -55,9 +54,8 @@ var ops = map[Op]string{
 	Rename:       "RENAME",
 	Chmod:        "CHMOD",
 	Move:         "MOVE",
-	Close:        "CLOSE",
-	CloseNoWrite: "CLOSE_NOWRITE",
-	CloseWrite:   "CLOSE_WRITE",
+	CloseWrite:   "CLOSE_WRITE,CLOSE",
+	CloseNoWrite: "CLOSE_NOWRITE,CLOSE",
 }
 
 // String prints the string version of the Op consts
